@@ -1,0 +1,15 @@
+{
+    "name": "bradjones1/custom_console_logging",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brad Jones",
+            "email": "brad@jones.name"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "monolog/monolog": ">=1.6.0,<2.0.0"
+    }
+}
