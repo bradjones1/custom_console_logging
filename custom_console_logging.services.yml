@@ -1,0 +1,3 @@
+services:
+  monolog.handler.console:
+    class: Drupal\custom_console_logging\ConsoleLoggingHandler
