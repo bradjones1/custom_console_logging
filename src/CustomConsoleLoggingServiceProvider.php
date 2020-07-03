@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Drupal\fruition_logging;
+namespace Drupal\custom_console_logging;
 
 use Drupal\Core\DependencyInjection\ContainerBuilder;
 use Drupal\Core\DependencyInjection\ServiceProviderBase;
