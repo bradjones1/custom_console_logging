@@ -1,6 +1,6 @@
 {
     "name": "bradjones1/custom_console_logging",
-    "type": "library",
+    "type": "drupal-module",
     "license": "MIT",
     "authors": [
         {
