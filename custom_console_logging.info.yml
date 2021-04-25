@@ -2,6 +2,7 @@ name: Custom Console Logging
 type: module
 description: Log to the Console.
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: Logging
 dependencies:
   - monolog:monolog
