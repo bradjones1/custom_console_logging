@@ -44,7 +44,6 @@ class ConsoleLoggingHandler extends StreamHandler {
       $stream = self::SINK;
     }
     parent::__construct($stream, $level, $bubble, $filePermission, $useLocking);
-    $this->setFormatter(new JsonFormatter());
   }
 
 }

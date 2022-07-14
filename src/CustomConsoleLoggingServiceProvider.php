@@ -10,7 +10,14 @@ class CustomConsoleLoggingServiceProvider extends ServiceProviderBase {
   public function alter(ContainerBuilder $container) {
     // Override the defaults from Monolog module to log everything to console.
     $container->setParameter('monolog.channel_handlers', [
-      'default' => ['console'],
+      'default' => [
+        'handlers' => [
+          [
+            'name' => 'console',
+            'formatter' => 'json',
+          ],
+        ],
+      ],
     ]);
   }
 

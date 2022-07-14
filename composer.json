@@ -5,11 +5,11 @@
     "authors": [
         {
             "name": "Brad Jones",
-            "email": "brad@jones.name"
+            "email": "brad@bradjonesllc.com"
         }
     ],
     "require": {
         "php": "^7.4|^8",
-        "drupal/monolog": "^2"
+        "drupal/monolog": "~2.0.2"
     }
 }
