@@ -38,10 +38,10 @@ class ConsoleLoggingHandler extends StreamHandler {
    * @throws \InvalidArgumentException
    *   If stream is not a resource or string
    */
-  public function __construct($stream = self::SINK, int $level = Logger::WARNING, bool $bubble = TRUE, ?int $filePermission = NULL, bool $useLocking = FALSE) {
+  public function __construct($stream = NULL, int $level = Logger::WARNING, bool $bubble = TRUE, ?int $filePermission = NULL, bool $useLocking = FALSE) {
     // Stream option is polymorphic so account for nullability here.
     if (is_null($stream)) {
-      $stream = self::SINK;
+      $stream = getenv('LOGGING_SINK') ?: self::SINK;
     }
     parent::__construct($stream, $level, $bubble, $filePermission, $useLocking);
   }
