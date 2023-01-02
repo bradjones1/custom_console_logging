@@ -1,3 +1,8 @@
+parameters:
+  custom_console_logging.level: 300
 services:
   monolog.handler.console:
     class: Drupal\custom_console_logging\ConsoleLoggingHandler
+    arguments:
+      - null
+      - '%custom_console_logging.level%'
